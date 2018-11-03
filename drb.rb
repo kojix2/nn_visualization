@@ -15,6 +15,6 @@ class NNStatus
   attr_accessor :w2, :w2_shape
 end
 
-DRb.start_service("druby://localhost:12345", NNStatus.new)
+DRb.start_service('druby://localhost:12345', NNStatus.new)
 
 DRb.thread.join
